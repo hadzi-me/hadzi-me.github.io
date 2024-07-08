@@ -2,7 +2,6 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title> Welcome </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,15 +33,34 @@
     </div>
 
     <div class="section" id="projects">
-        <h2>My first projects</h2> </section>
+        <h2>My first projects</h2>
+        </section>
+        <h3>Sudoku</h3>
+        <div class="row" id="sudoku">
+            <div class="column">
+                <p> I found this code on Github and was very interested in learning how to code a sudoku puzzle.
+                    Turns out there is much more work behind my favourite puzzle than I thought.
+                    With this simple example I see that it takes a lot of tedious work.
+                    While trying to understand it, I already know I would love the code to be able to:
+                <ul>
+                    <li>to show differences in colours within the inner 3x3 grids better,</li>
+                    <li>to only allow numbers to be entered in the cells,</li>
+                    <li>to show how many numbers are left,</li>
+                    <li>or display feedback for correct or wrong entries.</li>
+                </ul> Anyways, go ahead and give it a try. You can find the code
+                <a href="https://www.geeksforgeeks.org/create-a-sudoku-puzzle-using-html-css-javascript/"
+                    target="_blank">on this website.</a></p>
+            </div>
+            <div class="column">
+                <div class="container" id="container">Project 1</div>
+                <div class="buttonContainer">
+                    <button id="solveButton">Solve</button>
+                    <button id="resetButton">Reset</button>
+                </div>
+            </div>
+        </div>
 
-    <div class="container" id="container">Project 1</div>
-    <div class="buttonContainer">
-        <button id="solveButton">Solve</button>
-        <button id="resetButton">Reset</button>
-    </div>
-
-
+    <script src="script.js"></script>
 </body>
 <footer></footer>
 
