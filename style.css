@@ -28,12 +28,12 @@ a:active {
 }
 
 .topnav {
+  background-color: liniar;
   text-align: right;
   border-bottom-style: solid;
   border-bottom-color: whitesmoke;
   border-bottom-width: medium;
   padding: 20px;
-  overflow: hidden;
   position: sticky;
 
 }
@@ -93,10 +93,15 @@ h2 {
   padding-bottom: 20px;
 }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+
 .column {
   flex: 50%;
   vertical-align: middle;
-  align-items: justify;
+  align-items: center;
   text-align: justify;
   padding-inline: 10px;
 }
@@ -106,11 +111,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-top: 5px;
-}
-
-.row {
-  display: flex;
-  align-items: flex-start;
 }
 
 .cell {
@@ -156,4 +156,8 @@ h2 {
 
 .incorrect {
   color: red;
+}
+
+.d-none {
+  display: none;
 }

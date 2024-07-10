@@ -1,3 +1,22 @@
+const loginButton = document.getElementById("login")
+loginButton.addEventListener("click", function (event) {
+    console.log(event)
+
+    const enteredPassword = prompt("Please enter the password to see the image")
+    console.log(enteredPassword)
+
+    const base64Password = btoa(enteredPassword)
+    console.log(base64Password)
+    if (base64Password === 'bWVsaQ==') {
+        const popartCat = document.querySelector("img")
+        popartCat.classList.remove("d-none")
+    }
+})
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const container = document.getElementById("container");
 
@@ -132,4 +151,13 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("solveButton")
         .addEventListener("click", solvePuzzle);
     document.getElementById("resetButton")
-        .addEventListener("click", resetPuzzle);})
+        .addEventListener("click", resetPuzzle);
+})
+
+var quotes = [
+    "Describing yourself is like biting your own teeth.",
+    "If you do what you’ve always done, you’ll always get what you’ve always got.",
+    "When someone shows you who they are, believe them the first time. - Maya Angelou",
+    "You show me a capitalist, and I'll show you a bloodsucker. – Malcolm X",
+    "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. - Dr. Seuss"
+]
